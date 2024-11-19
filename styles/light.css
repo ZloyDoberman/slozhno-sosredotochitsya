@@ -46,7 +46,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --accent-color:#FF8DCB;
     --decor-color: #353430;
     --accent-color-hover: rgba(50, 49, 45, 0.4);
