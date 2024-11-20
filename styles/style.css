@@ -250,6 +250,12 @@
   margin-block-end: 10px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 @media (width >= 768px) {
   .main {
     row-gap: 80px;
@@ -364,7 +370,7 @@
 }
 
 .footer .focus-decor {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--focus-shadow, #ff0070);
 }
 
 @media (width >= 768px) {
