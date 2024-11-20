@@ -9,7 +9,7 @@
 
 body {
   margin: 0 auto;
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-weight: 400;
   font-size: var(--text-font-size);
   line-height: var(--text-line-height);

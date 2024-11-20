@@ -10,9 +10,13 @@
   */
   --accent-color:#FF0070;
   --decor-color: #FF0070;
+  --title-section-color: #FF0070;
   --accent-color-hover: rgba(255, 0, 112, 0.4);
   --color-text-decor: #000028;
   --title-color: #DB00FF;
   --cover-image: url(../images/cover-image-dark.png);
   --content-text-color: #F1B2CE;
+  --flex-or-none: flex;
+  --focus-shadow: #FF0070;
+  --bg-color: #000028;
 }

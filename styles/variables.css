@@ -7,12 +7,16 @@
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color:#FF0070;
   --decor-color: #FF0070;
+  --title-section-color: #FF0070;
   --accent-color-hover: rgba(255, 0, 112, 0.4);
   --color-text-decor: #000028;
   --text-font-size: 18px;
-  --text-line-height: 23.4px;
+  --text-line-height: 130%;
   --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-line-height:clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
   --title-color: #DB00FF;
   --content-text-color: #F1B2CE;
+  --flex-or-none: flex;
+  --focus-shadow: #FF0070;
+  --bg-color: #000028;
 }

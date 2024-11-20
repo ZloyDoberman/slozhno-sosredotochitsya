@@ -3,18 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-:root.theme-light {
-  /* Переменные светлой темы */
-  --accent-color:#FF8DCB;
-  --decor-color: #353430;
-  --accent-color-hover: rgba(50, 49, 45, 0.4);
-  --color-text-decor: #353430;
-  --title-color: #FFC2E6;
-  --cover-image: url(../images/cover-image-light.png);
-  --content-text-color: #353430;
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -22,52 +10,29 @@
   */
   --accent-color:#FF8DCB;
   --decor-color: #353430;
+  --title-section-color: #353430;
   --accent-color-hover: rgba(50, 49, 45, 0.4);
   --color-text-decor: #353430;
   --title-color: #FFC2E6;
   --cover-image: url(../images/cover-image-light.png);
   --content-text-color: #353430;
-}
-
-.page.theme_light .header__theme_dark-decorated-rec {
-  display: none;
-}
-
-.page.theme_light .header__theme-menu-button {
-  --accent-color:var(--decor-color);
-}
-
-.page.theme_light .focus-decor {
-  --accent-color:#FF0070;
-}
-
-.page.theme_light .title__content-info {
-  --accent-color:var(--color-text-decor);
+  --flex-or-none: none;
+  --focus-shadow: #FF0070;
+  --bg-color: #fff1f7;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color:#FF8DCB;
     --decor-color: #353430;
+    --title-section-color: #353430;
     --accent-color-hover: rgba(50, 49, 45, 0.4);
     --color-text-decor: #353430;
     --title-color: #FFC2E6;
     --cover-image: url(../images/cover-image-light.png);
     --content-text-color: #353430;
-  }
-  .page .header__theme_dark-decorated-rec {
-    display: none;
-  }
-  
-  .page .header__theme-menu-button {
-    --accent-color:var(--decor-color);
-  }
-  
-  .page .focus-decor {
-    --accent-color:#FF0070;
-  }
-  
-  .page .title__content-info {
-    --accent-color:var(--color-text-decor);
+    --flex-or-none: none;
+    --focus-shadow: #FF0070;
+    --bg-color: #fff1f7;
   }
 }
