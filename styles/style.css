@@ -16,7 +16,8 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  block-size: max(100vh, 668px);
+  height: 100hv;
+  min-height: 668px;
   padding: 10px;
 }
 
@@ -135,10 +136,8 @@
   }
 
   .header {
-    padding-block-start: 20px;
-    padding-block-end: 20px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding: 20px;
+    min-height: 1024px;
   }
 
   .decorated-zone::before {
@@ -166,6 +165,9 @@
 }
 
 @media (width >= 1024px) {
+  .header {
+    min-height: 768px;
+  }
 
   .header__text {
     inset-block-end: 0;
@@ -245,10 +247,6 @@
   font-weight: 400;
 }
 
-.main__content-info:nth-child(3) p.title__items {
-  margin-block-end: 10px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -268,15 +266,19 @@
     justify-content: space-between;
   }
 
-  .main__content-info--zero-row-gap {
+  .hard_to_concentrate {
     row-gap: 0;
   }
 
-  .main__content-info--grid-columns {
+  .five_simple_tips {
+    row-gap: 0;
+  }
+
+  .reduces_concentration {
     grid-template-columns: 1fr;
   }
 
-  .main__content-info--grid-columns .title__content-info {
+  .reduces_concentration .title__content-info {
     inline-size: min-content;
   }
 }
@@ -286,16 +288,16 @@
     grid-template-columns: 1fr 66%;
   }
 
-  .main__content-info--grid-columns .title__content-info {
+  .reduces_concentration .title__content-info {
     inline-size: 33%;
   }
 
-  .main__content-info--grid-columns .list__content-info {
+  .reduces_concentration .list__content-info {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0;
   }
 
-  .main__content-info.main__content-info--grid-columns {
+  .main__content-info.reduces_concentration {
     grid-template-columns: 1fr;
   }
 }
@@ -362,7 +364,8 @@
 .footer {
   display: grid;
   place-items: center;
-  block-size: max(100vh, 668px);
+  height: 100hv;
+  min-height: 668px;
   margin-block-start: 40px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
@@ -377,5 +380,15 @@
     margin-block-start: 60px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    min-height: 1024px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer {
+    margin-block-start: 60px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    min-height: 768px;
   }
 }
