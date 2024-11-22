@@ -16,11 +16,8 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  height: 100vh;
-  padding-block-start: 10px;
-  padding-block-end: 10px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
+  block-size: max(100vh, 668px);
+  padding: 10px;
 }
 
 .decorated-zone {
@@ -271,19 +268,15 @@
     justify-content: space-between;
   }
 
-  .first-section {
+  .main__content-info--zero-row-gap {
     row-gap: 0;
   }
 
-  .third-section {
-    row-gap: 0;
-  }
-
-  .second-section {
+  .main__content-info--grid-columns {
     grid-template-columns: 1fr;
   }
 
-  .second-section .title__content-info {
+  .main__content-info--grid-columns .title__content-info {
     inline-size: min-content;
   }
 }
@@ -293,16 +286,16 @@
     grid-template-columns: 1fr 66%;
   }
 
-  .second-section .title__content-info {
+  .main__content-info--grid-columns .title__content-info {
     inline-size: 33%;
   }
 
-  .second-section .list__content-info {
+  .main__content-info--grid-columns .list__content-info {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0;
   }
 
-  .main__content-info.second-section {
+  .main__content-info.main__content-info--grid-columns {
     grid-template-columns: 1fr;
   }
 }
@@ -333,33 +326,33 @@
     row-gap: 20px;
   }
 
-  .img1 {
-    grid-area: img1;
+  .img_sunset {
+    grid-area: img_sunset;
   }
 
-  .img2 {
-    grid-area: img2;
+  .img_ice-cream {
+    grid-area: img_ice-cream;
   }
 
-  .img3 {
-    grid-area: img3;
+  .img_tape {
+    grid-area: img_tape;
   }
 
-  .img4 {
-    grid-area: img4;
+  .img_books {
+    grid-area: img_books;
   }
 
-  .img5 {
-    grid-area: img5;
+  .img_street {
+    grid-area: img_street;
   }
 
   .gallery {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "img1 img1 img2"
-      "img3 img4 img2"
-      "img3 img5 img5";
+      "img_sunset img_sunset img_ice-cream"
+      "img_tape img_books img_ice-cream"
+      "img_tape img_street img_street";
     gap: 20px;
   }
 }
@@ -369,7 +362,7 @@
 .footer {
   display: grid;
   place-items: center;
-  height: 100vh;
+  block-size: max(100vh, 668px);
   margin-block-start: 40px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
